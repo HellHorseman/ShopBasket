@@ -8,7 +8,7 @@ public class Item {
         this.item = item;
     }
 
-    public Integer getItem() {
+    public Integer setItem() {
         return item;
     }
 

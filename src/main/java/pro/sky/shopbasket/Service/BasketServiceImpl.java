@@ -7,24 +7,24 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+
 @Service
 public class BasketServiceImpl implements BasketService {
 
-    private final List<Item> item;
+    private final List<Item> items;
 
     public BasketServiceImpl() {
-        this.item = new ArrayList<>();
+        this.items = new ArrayList<>();
     }
 
     @Override
     public Item add(Integer item) {
-        Item item = new Item(item);
-        return item;
+        return new Item(new Item(item).setItem());
     }
 
     @Override
     public Collection<Item> get() {
-        return Collections.unmodifiableCollection(item);
+        return Collections.unmodifiableCollection(items);
 
     }
 }
