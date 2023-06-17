@@ -7,10 +7,9 @@ import pro.sky.shopbasket.Item.Item;
 import pro.sky.shopbasket.Service.BasketService;
 
 import java.util.Collection;
-import java.util.Collections;
 
 @RestController
-@RequestMapping("/store/order")
+@RequestMapping("/order")
 public class ShopBasketController {
     private final BasketService service;
 

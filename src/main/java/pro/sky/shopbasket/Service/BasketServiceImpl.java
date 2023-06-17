@@ -1,7 +1,7 @@
 package pro.sky.shopbasket.Service;
 
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.SessionScope;
 import pro.sky.shopbasket.Item.Item;
 
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.List;
 
 @Service
-@Scope("session")
+@SessionScope
 public class BasketServiceImpl implements BasketService {
 
     private final List<Item> items;
